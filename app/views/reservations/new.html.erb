@@ -1,5 +1,20 @@
-<h1>Reservations#new</h1>
+<h1>Make a new reservation at <%= @restaurant.name%></h1>
 
-<%= render "restaurantform" %>
+  <%= @restaurant.address %><br>
 
+  <%= form_for [@restaurant, @reservation] do |f| %>
+    <p>
+      <%= f.label "seats to book" %><br>
+      <%= f.number_field "size" %>
+    </p>
 
+    <p>
+      <%= f.label "time" %><br>
+      <%= f.number_field "time" %>
+    </p>
+
+    <p>
+      <%= submit_tag "save", id: "submit", class: "button" %>
+    </p>
+
+  <% end %>
