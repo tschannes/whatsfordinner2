@@ -1,0 +1,54 @@
+<%= form_for @restaurant do |f| %>
+
+  <p>
+    <%= f.label "name" %><br>
+    <%= f.text_field "name" %>
+  </p>
+
+  <p>
+    <%= f.label "address" %><br>
+    <%= f.text_field "address" %>
+  </p>
+
+  <p>
+    <%= f.label "menu" %><br>
+    <%= f.text_field "menu" %>
+  </p>
+
+  <p>
+    <%= f.label "neighborhood" %><br>
+    <%= f.text_field "neighborhood" %>
+  </p>
+
+  <p>
+    <%= f.label "number of seats" %><br>
+    <%= f.text_field "num_seats" %>
+  </p>
+
+  <p>
+    <%= f.label "price_range" %><br>
+    <%= f.text_field "price_range" %>
+  </p>
+
+  <p>
+    <%= f.label "category" %>
+    <%= f.collection_select :category_id, Category.all, :id, :food_type %>
+  </p>
+
+  <p>
+    <%= f.label "summary" %><br>
+    <%= f.text_area "summary" %>
+  </p>
+
+  <p>
+    <%= f.label "timeslots_available" %><br>
+    <%= f.text_field "timeslots_available" %>
+  </p>
+
+  <p>
+    <%= submit_tag "save", id: "submit", class: "button" %>
+  </p>
+
+<% end %>
+
+

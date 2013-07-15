@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  address: MyString
+  neighborhood: MyString
+  price_range: MyString
+  summary: MyText
+  menu: MyText
+  timeslots_available: MyString
+  num_seats: MyString
+
+two:
+  address: MyString
+  neighborhood: MyString
+  price_range: MyString
+  summary: MyText
+  menu: MyText
+  timeslots_available: MyString
+  num_seats: MyString

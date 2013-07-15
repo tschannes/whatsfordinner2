@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Whatsfordinner</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<% if flash[:notice] %>
+      <p id="notice"><%= flash[:notice] %></p>
+    <% end %>
+    <% if flash[:alert] %>
+       <p id="alert"><%= flash[:alert] %></p>
+    <% end %>
+
+<%= yield %>
+
+<nav>
+  <%= link_to "Home", root_path %></br>
+  'current_user' is <%= current_user.inspect %><br>
+  <% if signed_in? %>
+    <%= link_to "Sign out", signout_path %><br>
+    <%= link_to "New Restaurant", new_restaurant_path %></br>
+
+  <% elsif %>
+      <%= link_to "Sign up", new_user_path %></br>
+      <%= link_to "Sign in", new_session_path %><br>
+
+  <% end %>
+</nav>
+</body>
+</html>

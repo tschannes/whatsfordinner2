@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  time: 2013-07-12 16:03:38
+  size: 1
+
+two:
+  time: 2013-07-12 16:03:38
+  size: 1

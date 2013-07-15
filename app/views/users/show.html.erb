@@ -1,0 +1,6 @@
+<h1><%= @user.email %> Profile</h1>
+
+<%= @user.points %> points<br>
+<%= @user.role %><br>
+<%= link_to "Edit Link", edit_user_path %><br>
+<%= link_to "Delete User", {action:"destroy"}, method: :delete, data: { confirm: "are you sure?" } %><br>
