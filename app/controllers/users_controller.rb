@@ -24,8 +24,9 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
 
     if @user.update_attributes(params[:user])
-      redirect_to products_url, :notice => "Profile was successfully updated"
+      redirect_to user_path(current_user), :notice => "Profile was successfully updated"
     else
+      flash[:notice] = @user.errors.messages
       render "show"
     end
   end

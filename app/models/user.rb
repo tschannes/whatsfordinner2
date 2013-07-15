@@ -1,16 +1,18 @@
 class User < ActiveRecord::Base
   require 'bcrypt'
 
-  attr_accessible :remember_token, :name, :email, :password, :password_confirmation, :points, :role
+  attr_accessible :remember_token, :name, :email, :password, :password_confirmation, :role
   has_secure_password
 
-  validates_presence_of :password, :on => :create
-  validates_presence_of :password_confirmation, :on => :create
+  before_save :valid_password
+
+  validates_presence_of :password
+  validates_presence_of :password_confirmation
   validates_presence_of :email
-  validates :email, :on => :create, :uniqueness => true
+  validates :email, :uniqueness => true
 
   before_save { |user| user.email = email.downcase }
-  before_save :create_remember_token
+  before_create :create_remember_token
 
   has_many :reservations
   has_many :restaurants, through: :reservations
@@ -21,4 +23,7 @@ class User < ActiveRecord::Base
       self.remember_token = SecureRandom.urlsafe_base64
     end
 
+    def valid_password
+      :password == :password_confirmation
+    end
 end
