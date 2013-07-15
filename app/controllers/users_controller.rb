@@ -26,7 +26,7 @@ class UsersController < ApplicationController
     if @user.update_attributes(params[:user])
       redirect_to user_path(current_user), :notice => "Profile was successfully updated"
     else
-      flash[:notice] = @user.errors.messages
+      flash[:notice] = @user.errors.full_messages
       render "show"
     end
   end

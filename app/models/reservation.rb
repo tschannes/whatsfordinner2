@@ -27,9 +27,9 @@ class Reservation < ActiveRecord::Base
   end
 
   def number_of_seats_available
-  end
-
-  def restaurant_hours
+    if size && (size > num_seats)
+      errors.add(:size, "Party too large for restaurant")
+    end
   end
 
   def reservation_time_slot_open

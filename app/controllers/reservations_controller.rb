@@ -6,15 +6,12 @@ class ReservationsController < ApplicationController
     @restaurant = Restaurant.find(params[:restaurant_id])
     @reservation = Reservation.new(params[:reservation])
 
-    # Reservation.new( {:size => "400", :time => "9"} )
-    # don't do this -  params[:reservation][:restaurant_id]
-
-    flash[:notice] = @reservation
-    # @reservation = @restaurant.reservations.find(params[:restaurant_id])
-    if proper_reservation_size?(@reservation.size)
-          redirect_to user_path(current_user), :notice => "You successfully made a reservation!"
-        else
-          render "reservations/new", :notice => "Something went wrong!"
+    if @reservation.save
+      flash[:notice] = "You successfully made a reservation!"
+      redirect_to user_path(current_user)
+    else
+      flash[:notice] = @reservation.errors.full_messages.first
+      render "reservations/new"
     end
   end
 

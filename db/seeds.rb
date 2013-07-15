@@ -30,7 +30,7 @@ Restaurant.create!(
   address: "111 street",
   menu: "cool menu",
   neighborhood: "shankville",
-  num_seats: "100",
+  num_seats: "10",
   price_range: "$",
   summary: "pretty shit",
   timeslots_available: "12",
