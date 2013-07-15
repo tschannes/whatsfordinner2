@@ -18,13 +18,17 @@
 
 <nav>
   <%= link_to "Home", root_path %></br>
-  'current_user' is <%= current_user.inspect %><br>
-  <% if signed_in? %>
+    <% if signed_in? && is_admin?(current_user) %>
+    <%= link_to "User Profile", user_path(current_user) %></br>
     <%= link_to "Sign out", signout_path %><br>
     <%= link_to "New Restaurant", new_restaurant_path %></br>
 
-  <% elsif %>
-      <%= link_to "Sign up", new_user_path %></br>
+  <% elsif signed_in? %>
+    <%= link_to "User Profile", user_path(current_user) %></br>
+    <%= link_to "Sign out", signout_path %><br>
+
+  <% else %>
+    <%= link_to "Sign up", new_user_path %></br>
       <%= link_to "Sign in", new_session_path %><br>
 
   <% end %>
