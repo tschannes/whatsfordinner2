@@ -6,7 +6,7 @@ class Reservation < ActiveRecord::Base
 
   # validates :time, :presence => true
   validate :proper_reservation_size
-  # after_create :calc_seats_remaining(@restaurant.num_seats, @reservation.size)
+  # after_create :calc_seats_remaining
 
 
   def proper_reservation_size
@@ -24,8 +24,11 @@ class Reservation < ActiveRecord::Base
   def reservation_time_slot_open
   end
 
-  def calc_seats_remaining(num_seats, size)
-    num_seats = num_seats.to_i  - size
+  def calc_seats_remaining
+    num_seats = @restaurant.num_seats
+    num_seats = num_seats.to_i
+    num_seats = num_seats - self.size
+    num_seats = num_seats.to_s
   end
 
 end

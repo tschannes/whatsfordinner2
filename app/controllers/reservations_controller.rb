@@ -15,21 +15,18 @@ class ReservationsController < ApplicationController
     @reservation.user = current_user
     # raise @reservation.inspect
 
-
     if @reservation.save
       flash[:notice] = "Reservation created!"
       redirect_to user_path(current_user)
     else
-      flash[:notice] = @reservation.errors.full_messages.first
+      flash[:alert] = @reservation.errors.full_messages.first
       render 'new'
     end
 
-
+    # @reservation = Reservation.new(params[:reservation])
 
     # @restaurant = Restaurant.find(params[:restaurant_id])
-    @reservation = Reservation.new(params[:reservation])
     # @user = @reservation.user_id
-
     # if @reservation.save
     #   flash[:notice] = "You successfully made a reservation!"
     #   redirect_to user_path(current_user)

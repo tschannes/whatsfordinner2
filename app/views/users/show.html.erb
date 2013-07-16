@@ -1,5 +1,18 @@
 <h1><%= @user.email %> Profile</h1>
 
+
+<% if is_admin?(current_user) %>
+  <div style='background-color:grey'>
+    <h1>Admin-Panel</h1>
+    <% @reservations.each do |r| %>
+    <% if r.restaurant && r.user_id == current_user.id %>
+        <%= r.restaurant.name %><br>
+        <%= r.restaurant.num_seats %><br>
+      <% end %>
+    <% end %>
+  </div>
+<% end %>
+
 <%= @user.points %> points<br>
 <%= @user.role %><br>
 <%= link_to "Edit Link", edit_user_path %><br>
@@ -16,9 +29,10 @@
     <% end %>
 
     <br>
-    time: <%= f.time.inspect %><br>
+    time: <%= f.time %><br>
     size: <%= f.size %><br>
   <% end %>
+
 
 </div>
 
