@@ -32,7 +32,13 @@ class ReservationsController < ApplicationController
   def destroy
   end
 
+  def calc_seats_remaining
+    num_seats = num_seats  - size
+  end
 
+  def time_slot_selected
+
+  end
 
 # is the reservation btw 2..20
 # number of seats available?

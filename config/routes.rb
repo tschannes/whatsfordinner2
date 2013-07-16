@@ -2,6 +2,7 @@ Whatsfordinner::Application.routes.draw do
 
   resources :users
 
+
   resources :restaurants do
     resources :reservations
   end

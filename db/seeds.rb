@@ -33,7 +33,7 @@ Restaurant.create!(
   num_seats: "10",
   price_range: "$",
   summary: "pretty shit",
-  timeslots_available: "12",
+  timeslots_available: "45",
   category_id: Category.first.id
   )
 
