@@ -6,7 +6,7 @@ class Reservation < ActiveRecord::Base
 
   validates :time, :presence => true
   validate :proper_reservation_size
-  validate :number_of_seats_available
+  # validate :number_of_seats_available
   # probably need to define:
   # how long do people eat for
 

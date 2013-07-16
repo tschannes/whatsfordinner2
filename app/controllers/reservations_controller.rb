@@ -33,7 +33,7 @@ class ReservationsController < ApplicationController
   end
 
   def calc_seats_remaining
-    num_seats = num_seats  - size
+    # num_seats = num_seats  - size
   end
 
   def time_slot_selected

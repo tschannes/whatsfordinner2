@@ -4,7 +4,7 @@ class User < ActiveRecord::Base
   attr_accessible :remember_token, :name, :email, :password, :password_confirmation, :role
   has_secure_password
 
-  before_save :valid_password
+  # before_save :valid_password
 
   validates_presence_of :password
   validates_presence_of :password_confirmation
@@ -23,7 +23,7 @@ class User < ActiveRecord::Base
       self.remember_token = SecureRandom.urlsafe_base64
     end
 
-    def valid_password
-      :password == :password_confirmation
-    end
+    # def valid_password
+    #   :password == :password_confirmation
+    # end
 end
