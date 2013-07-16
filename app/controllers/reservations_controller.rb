@@ -1,22 +1,41 @@
 class ReservationsController < ApplicationController
+   before_filter :load_restaurant
+
   def index
   end
 
   def create
-    @restaurant = Restaurant.find(params[:restaurant_id])
-    @reservation = Reservation.new(params[:reservation])
+   @reservation = Reservation.new(
+      # time: params[:reservation]["time(1i)"],
+      size: params[:reservation][:size],
+      restaurant_id: params[:restaurant_id],
+      user_id: current_user.id)
 
     if @reservation.save
-      flash[:notice] = "You successfully made a reservation!"
+      flash[:notice] = "Reservation created!"
       redirect_to user_path(current_user)
     else
       flash[:notice] = @reservation.errors.full_messages.first
-      render "reservations/new"
+      render 'new'
     end
+
+
+
+    # @restaurant = Restaurant.find(params[:restaurant_id])
+    # @reservation = Reservation.new(params[:reservation])
+    # @user = @reservation.user_id
+
+    # if @reservation.save
+    #   flash[:notice] = "You successfully made a reservation!"
+    #   redirect_to user_path(current_user)
+    # else
+    #   flash[:notice] = @reservation.errors.full_messages.first
+    #   render "reservations/new"
+    # end
   end
 
   def new
-    @restaurant = Restaurant.find(params[:restaurant_id])
+    # @restaurant = Restaurant.find(params[:restaurant_id])
     @reservation = Reservation.new
   end
 
@@ -44,6 +63,11 @@ class ReservationsController < ApplicationController
 # number of seats available?
 # is the restaurant open
 # is the time slot available
+
+  private
+    def load_restaurant
+          @restaurant = Restaurant.find(params[:restaurant_id])
+    end
 
 
 end

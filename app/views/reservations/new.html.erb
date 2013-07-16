@@ -2,15 +2,20 @@
 
   <%= @restaurant.address %><br>
 
+  <%= @restaurant.id %>
+
   <%= form_for [@restaurant, @reservation] do |f| %>
+
+
+
     <p>
       <%= f.label "seats to book" %><br>
-      <%= f.number_field "size" %>
+      <%= f.number_field "size", value: 2 %>
     </p>
 
     <p>
       <%= f.label "time" %><br>
-      <%= f.datetime_select(:time, ampm: true) %>
+      <%= f.datetime_select "time" %>
     </p>
 
     <p>

@@ -1,24 +1,23 @@
 class Reservation < ActiveRecord::Base
-  attr_accessible :size, :time
+  attr_accessible :size, :time, :restaurant_id, :user_id
 
   belongs_to :user
   belongs_to :restaurant
 
-  validates :time, :presence => true
+  # validates :time, :presence => true
   validate :proper_reservation_size
-  # validate :number_of_seats_available
-  # probably need to define:
-  # how long do people eat for
+
+  # before_create :default_customer
+  # before_create :default_restaurant
 
 
-  # make sure that size is set to something
-  # make sure that restaurant time is between opening hours of restaurant - but where is this defined?
+  def default_customer
+    self.user_id = 6
+  end
 
-  # eventually..
-  # make sure there are no conflicts
-    # make sure at all times that the reservation being created has enough seats remaining (for that entire time period)
-
-
+  def default_restaurant
+    self.restaurant_id = 1
+  end
 
   def proper_reservation_size
     if size && (size < 2 || size > 20)

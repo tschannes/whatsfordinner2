@@ -5,14 +5,19 @@
 <%= link_to "Edit Link", edit_user_path %><br>
 <%= link_to "Delete User", {action:"destroy"}, method: :delete, data: { confirm: "are you sure?" } %><br>
 
-<div>
-  <%= current_user.id %>
-  <%= @user.restaurants.reservation.inspect %>
+<div style="background-color: green">
+  <h2>Reservations</h2>
+  user id: <%= current_user.id %><br>
 
-  <% current_user.reservations.each do |f| %>
-    <%= f.restaurant.name %>
-    <%= f.time %>
-    <%= f.size %>
+
+  <% @user.reservations.each do |f| %>
+    <% if f.restaurant != nil %>
+  Name: <%= f.restaurant.name %>
+    <% end %>
+
+    <br>
+    time: <%= f.time %><br>
+    size: <%= f.size %><br>
   <% end %>
 
 </div>
