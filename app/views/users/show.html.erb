@@ -12,11 +12,11 @@
 
   <% @user.reservations.each do |f| %>
     <% if f.restaurant != nil %>
-  Name: <%= f.restaurant.name %>
+      Name: <%= f.restaurant.name %>
     <% end %>
 
     <br>
-    time: <%= f.time %><br>
+    time: <%= f.time.inspect %><br>
     size: <%= f.size %><br>
   <% end %>
 

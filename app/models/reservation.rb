@@ -6,18 +6,8 @@ class Reservation < ActiveRecord::Base
 
   # validates :time, :presence => true
   validate :proper_reservation_size
+  # after_create :calc_seats_remaining(@restaurant.num_seats, @reservation.size)
 
-  # before_create :default_customer
-  # before_create :default_restaurant
-
-
-  def default_customer
-    self.user_id = 6
-  end
-
-  def default_restaurant
-    self.restaurant_id = 1
-  end
 
   def proper_reservation_size
     if size && (size < 2 || size > 20)
@@ -34,4 +24,12 @@ class Reservation < ActiveRecord::Base
   def reservation_time_slot_open
   end
 
+  def calc_seats_remaining(num_seats, size)
+    num_seats = num_seats.to_i  - size
+  end
+
 end
+# is the reservation btw 2..20
+# number of seats available?
+# is the restaurant open
+# is the time slot available

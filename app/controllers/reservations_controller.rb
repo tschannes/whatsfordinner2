@@ -5,11 +5,16 @@ class ReservationsController < ApplicationController
   end
 
   def create
-   @reservation = Reservation.new(
-      # time: params[:reservation]["time(1i)"],
-      size: params[:reservation][:size],
-      restaurant_id: params[:restaurant_id],
-      user_id: current_user.id)
+    # raise params[:reservation].inspect
+    # @reservation = Reservation.new(
+    #    time: params[:reservation][:time],
+    #    size: params[:reservation][:size],
+    #    restaurant_id: params[:restaurant_id],
+    #    user_id: current_user.id)
+    @reservation = @restaurant.reservations.build(params[:reservation])
+    @reservation.user = current_user
+    # raise @reservation.inspect
+
 
     if @reservation.save
       flash[:notice] = "Reservation created!"
@@ -22,7 +27,7 @@ class ReservationsController < ApplicationController
 
 
     # @restaurant = Restaurant.find(params[:restaurant_id])
-    # @reservation = Reservation.new(params[:reservation])
+    @reservation = Reservation.new(params[:reservation])
     # @user = @reservation.user_id
 
     # if @reservation.save
@@ -51,9 +56,7 @@ class ReservationsController < ApplicationController
   def destroy
   end
 
-  def calc_seats_remaining
-    # num_seats = num_seats  - size
-  end
+
 
   def time_slot_selected
 
@@ -63,6 +66,10 @@ class ReservationsController < ApplicationController
 # number of seats available?
 # is the restaurant open
 # is the time slot available
+
+
+
+
 
   private
     def load_restaurant

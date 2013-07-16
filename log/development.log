@@ -52162,3 +52162,1839 @@ Served asset /users.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-16 13:54:51 -0400
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/6" for 127.0.0.1 at 2013-07-16 13:56:58 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "6"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'D6MUQkHaGchEZ07W4dYuBA' LIMIT 1[0m
+  [1m[35mReservation Load (0.2ms)[0m  SELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = 6
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 1 LIMIT 1
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 5 LIMIT 1
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 8 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 8 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 8 LIMIT 1[0m
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 7 LIMIT 1[0m
+  Rendered users/show.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 83ms (Views: 81.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2013-07-16 13:56:58 -0400
+Served asset /reservations.css - 200 OK (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-16 13:56:58 -0400
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2013-07-16 13:56:58 -0400
+Served asset /restaurants.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-16 13:56:58 -0400
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-16 13:56:58 -0400
+Served asset /users.css - 200 OK (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-07-16 13:56:58 -0400
+Served asset /sessions.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-16 13:56:58 -0400
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2013-07-16 13:56:58 -0400
+Served asset /reservations.js - 200 OK (0ms)
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2013-07-16 13:56:58 -0400
+Served asset /restaurants.js - 200 OK (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-16 13:56:58 -0400
+Served asset /users.js - 200 OK (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-07-16 13:56:58 -0400
+Served asset /sessions.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-16 13:56:58 -0400
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/users/6" for 127.0.0.1 at 2013-07-16 13:58:25 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "6"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'D6MUQkHaGchEZ07W4dYuBA' LIMIT 1[0m
+  [1m[35mReservation Load (0.2ms)[0m  SELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = 6
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 1 LIMIT 1
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 5 LIMIT 1
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 8 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 8 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 8 LIMIT 1[0m
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 7 LIMIT 1[0m
+  Rendered users/show.html.erb within layouts/application (96.9ms)
+Completed 200 OK in 149ms (Views: 135.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2013-07-16 13:58:26 -0400
+Served asset /reservations.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-16 13:58:26 -0400
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-16 13:58:26 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-07-16 13:58:26 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-16 13:58:26 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2013-07-16 13:58:26 -0400
+Served asset /restaurants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-16 13:58:26 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2013-07-16 13:58:26 -0400
+Served asset /reservations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2013-07-16 13:58:26 -0400
+Served asset /restaurants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-07-16 13:58:26 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-16 13:58:26 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-16 13:58:26 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/6" for 127.0.0.1 at 2013-07-16 13:58:36 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "6"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'D6MUQkHaGchEZ07W4dYuBA' LIMIT 1[0m
+  [1m[35mReservation Load (0.2ms)[0m  SELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = 6
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 1 LIMIT 1
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 5 LIMIT 1
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 8 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 8 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 8 LIMIT 1[0m
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 7 LIMIT 1[0m
+  Rendered users/show.html.erb within layouts/application (81.0ms)
+Completed 200 OK in 171ms (Views: 139.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-16 13:58:36 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2013-07-16 13:58:36 -0400
+Served asset /reservations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-16 13:58:36 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-07-16 13:58:36 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2013-07-16 13:58:36 -0400
+Served asset /restaurants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-16 13:58:36 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-16 13:58:36 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2013-07-16 13:58:36 -0400
+Served asset /reservations.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-07-16 13:58:36 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-16 13:58:36 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2013-07-16 13:58:36 -0400
+Served asset /restaurants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-16 13:58:36 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-16 13:58:39 -0400
+Processing by RestaurantsController#index as HTML
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT "restaurants".* FROM "restaurants" 
+  Rendered restaurants/index.html.erb within layouts/application (1.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'D6MUQkHaGchEZ07W4dYuBA' LIMIT 1[0m
+Completed 200 OK in 71ms (Views: 69.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-07-16 13:58:39 -0400
+Served asset /sessions.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-16 13:58:39 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2013-07-16 13:58:39 -0400
+Served asset /reservations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2013-07-16 13:58:39 -0400
+Served asset /restaurants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-16 13:58:39 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-16 13:58:39 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2013-07-16 13:58:39 -0400
+Served asset /reservations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2013-07-16 13:58:39 -0400
+Served asset /restaurants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-07-16 13:58:39 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-16 13:58:39 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-16 13:58:39 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/restaurants/5" for 127.0.0.1 at 2013-07-16 13:58:41 -0400
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT 1  [["id", "5"]]
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 5 LIMIT 1[0m
+  Rendered restaurants/show.html.erb within layouts/application (15.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'D6MUQkHaGchEZ07W4dYuBA' LIMIT 1
+Completed 200 OK in 78ms (Views: 75.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-16 13:58:41 -0400
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-16 13:58:41 -0400
+Served asset /users.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-16 13:58:41 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-07-16 13:58:41 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2013-07-16 13:58:41 -0400
+Served asset /restaurants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2013-07-16 13:58:41 -0400
+Served asset /reservations.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-16 13:58:41 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2013-07-16 13:58:41 -0400
+Served asset /reservations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2013-07-16 13:58:41 -0400
+Served asset /restaurants.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-07-16 13:58:41 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-16 13:58:41 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-16 13:58:41 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/restaurants/5/reservations/new" for 127.0.0.1 at 2013-07-16 13:58:42 -0400
+Processing by ReservationsController#new as HTML
+  Parameters: {"restaurant_id"=>"5"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT 1[0m  [["id", "5"]]
+  Rendered reservations/new.html.erb within layouts/application (10.7ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'D6MUQkHaGchEZ07W4dYuBA' LIMIT 1
+Completed 200 OK in 75ms (Views: 73.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-16 13:58:42 -0400
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2013-07-16 13:58:42 -0400
+Served asset /reservations.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2013-07-16 13:58:42 -0400
+Served asset /restaurants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-16 13:58:42 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-07-16 13:58:42 -0400
+Served asset /sessions.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-16 13:58:42 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2013-07-16 13:58:42 -0400
+Served asset /reservations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2013-07-16 13:58:42 -0400
+Served asset /restaurants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-07-16 13:58:42 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-16 13:58:42 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-16 13:58:42 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/restaurants/5/reservations" for 127.0.0.1 at 2013-07-16 13:58:48 -0400
+Processing by ReservationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xbvcDbG+El1XI2zUxACdpBsgxGA+dYcnq5+8o4vKyOM=", "reservation"=>{"size"=>"14", "time(1i)"=>"2013", "time(2i)"=>"7", "time(3i)"=>"16", "time(4i)"=>"17", "time(5i)"=>"58"}, "commit"=>"save", "restaurant_id"=>"5"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT 1[0m  [["id", "5"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'D6MUQkHaGchEZ07W4dYuBA' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "reservations" ("created_at", "restaurant_id", "size", "time", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Tue, 16 Jul 2013 17:58:48 UTC +00:00], ["restaurant_id", 5], ["size", 14], ["time", nil], ["updated_at", Tue, 16 Jul 2013 17:58:48 UTC +00:00], ["user_id", 6]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/6
+Completed 302 Found in 9ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/users/6" for 127.0.0.1 at 2013-07-16 13:58:48 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "6"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'D6MUQkHaGchEZ07W4dYuBA' LIMIT 1[0m
+  [1m[35mReservation Load (0.2ms)[0m  SELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = 6
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 1 LIMIT 1
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 5 LIMIT 1
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 8 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 8 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 8 LIMIT 1[0m
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 5 LIMIT 1
+  Rendered users/show.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 76ms (Views: 74.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-16 13:58:48 -0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2013-07-16 13:58:48 -0400
+Served asset /reservations.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-07-16 13:58:48 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-16 13:58:48 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-16 13:58:48 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2013-07-16 13:58:48 -0400
+Served asset /restaurants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2013-07-16 13:58:48 -0400
+Served asset /reservations.js - 304 Not Modified (19ms)
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2013-07-16 13:58:48 -0400
+Served asset /restaurants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-16 13:58:48 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-07-16 13:58:48 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-16 13:58:48 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/6" for 127.0.0.1 at 2013-07-16 13:59:46 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "6"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'D6MUQkHaGchEZ07W4dYuBA' LIMIT 1
+  [1m[36mReservation Load (0.2ms)[0m  [1mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = 6[0m
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 1 LIMIT 1[0m
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 5 LIMIT 1[0m
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 8 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 8 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 8 LIMIT 1
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 5 LIMIT 1[0m
+  Rendered users/show.html.erb within layouts/application (63.5ms)
+Completed 200 OK in 197ms (Views: 159.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-16 13:59:47 -0400
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-16 13:59:47 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2013-07-16 13:59:47 -0400
+Served asset /restaurants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2013-07-16 13:59:47 -0400
+Served asset /reservations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-16 13:59:47 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-07-16 13:59:47 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-16 13:59:47 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2013-07-16 13:59:47 -0400
+Served asset /reservations.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2013-07-16 13:59:47 -0400
+Served asset /restaurants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-07-16 13:59:47 -0400
+Served asset /sessions.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-16 13:59:47 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-16 13:59:47 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-16 13:59:49 -0400
+Processing by RestaurantsController#index as HTML
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT "restaurants".* FROM "restaurants" 
+  Rendered restaurants/index.html.erb within layouts/application (1.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'D6MUQkHaGchEZ07W4dYuBA' LIMIT 1[0m
+Completed 200 OK in 76ms (Views: 74.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2013-07-16 13:59:49 -0400
+Served asset /reservations.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-07-16 13:59:49 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-16 13:59:49 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2013-07-16 13:59:49 -0400
+Served asset /restaurants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-16 13:59:49 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-16 13:59:49 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-16 13:59:49 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2013-07-16 13:59:49 -0400
+Served asset /reservations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2013-07-16 13:59:49 -0400
+Served asset /restaurants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-07-16 13:59:49 -0400
+Served asset /sessions.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-16 13:59:49 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-16 13:59:49 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/restaurants/6" for 127.0.0.1 at 2013-07-16 13:59:50 -0400
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT 1  [["id", "6"]]
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 5 LIMIT 1[0m
+  Rendered restaurants/show.html.erb within layouts/application (36.7ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'D6MUQkHaGchEZ07W4dYuBA' LIMIT 1
+Completed 200 OK in 93ms (Views: 90.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-16 13:59:50 -0400
+Served asset /application.css - 304 Not Modified (25ms)
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2013-07-16 13:59:50 -0400
+Served asset /reservations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2013-07-16 13:59:50 -0400
+Served asset /restaurants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-07-16 13:59:50 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-16 13:59:50 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-16 13:59:50 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2013-07-16 13:59:50 -0400
+Served asset /reservations.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-16 13:59:50 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-07-16 13:59:50 -0400
+Served asset /sessions.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2013-07-16 13:59:50 -0400
+Served asset /restaurants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-16 13:59:50 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-16 13:59:50 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/restaurants/6/reservations/new" for 127.0.0.1 at 2013-07-16 13:59:52 -0400
+Processing by ReservationsController#new as HTML
+  Parameters: {"restaurant_id"=>"6"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT 1[0m  [["id", "6"]]
+  Rendered reservations/new.html.erb within layouts/application (10.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'D6MUQkHaGchEZ07W4dYuBA' LIMIT 1
+Completed 200 OK in 92ms (Views: 90.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-16 13:59:52 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2013-07-16 13:59:52 -0400
+Served asset /restaurants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-16 13:59:52 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-07-16 13:59:52 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2013-07-16 13:59:52 -0400
+Served asset /reservations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-16 13:59:52 -0400
+Served asset /users.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-16 13:59:52 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2013-07-16 13:59:52 -0400
+Served asset /restaurants.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2013-07-16 13:59:52 -0400
+Served asset /reservations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-07-16 13:59:52 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-16 13:59:52 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-16 13:59:52 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/restaurants/6/reservations" for 127.0.0.1 at 2013-07-16 13:59:55 -0400
+Processing by ReservationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xbvcDbG+El1XI2zUxACdpBsgxGA+dYcnq5+8o4vKyOM=", "reservation"=>{"size"=>"15", "time(1i)"=>"2013", "time(2i)"=>"7", "time(3i)"=>"16", "time(4i)"=>"17", "time(5i)"=>"59"}, "commit"=>"save", "restaurant_id"=>"6"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT 1[0m  [["id", "6"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'D6MUQkHaGchEZ07W4dYuBA' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (6.1ms)[0m  INSERT INTO "reservations" ("created_at", "restaurant_id", "size", "time", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Tue, 16 Jul 2013 17:59:55 UTC +00:00], ["restaurant_id", 6], ["size", 15], ["time", nil], ["updated_at", Tue, 16 Jul 2013 17:59:55 UTC +00:00], ["user_id", 6]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/6
+Completed 302 Found in 15ms (ActiveRecord: 8.1ms)
+
+
+Started GET "/users/6" for 127.0.0.1 at 2013-07-16 13:59:55 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "6"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'D6MUQkHaGchEZ07W4dYuBA' LIMIT 1[0m
+  [1m[35mReservation Load (0.2ms)[0m  SELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = 6
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 1 LIMIT 1
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 5 LIMIT 1
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 8 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 8 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 8 LIMIT 1[0m
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  Rendered users/show.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 81ms (Views: 78.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-16 13:59:55 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2013-07-16 13:59:55 -0400
+Served asset /reservations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-07-16 13:59:55 -0400
+Served asset /sessions.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2013-07-16 13:59:55 -0400
+Served asset /restaurants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-16 13:59:55 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-16 13:59:55 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-16 13:59:55 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2013-07-16 13:59:55 -0400
+Served asset /reservations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2013-07-16 13:59:55 -0400
+Served asset /restaurants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-07-16 13:59:55 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-16 13:59:55 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-16 13:59:55 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/6" for 127.0.0.1 at 2013-07-16 14:00:18 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "6"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'D6MUQkHaGchEZ07W4dYuBA' LIMIT 1[0m
+  [1m[35mReservation Load (0.2ms)[0m  SELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = 6
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 1 LIMIT 1
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 5 LIMIT 1
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 8 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 8 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 8 LIMIT 1[0m
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  Rendered users/show.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 101ms (Views: 98.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-16 14:00:18 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-16 14:00:18 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2013-07-16 14:00:18 -0400
+Served asset /restaurants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-16 14:00:18 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-07-16 14:00:18 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2013-07-16 14:00:18 -0400
+Served asset /reservations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-16 14:00:18 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2013-07-16 14:00:19 -0400
+Served asset /reservations.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-16 14:00:19 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-16 14:00:19 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2013-07-16 14:00:19 -0400
+Served asset /restaurants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-07-16 14:00:19 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started POST "/restaurants/6/reservations" for 127.0.0.1 at 2013-07-16 14:00:23 -0400
+Processing by ReservationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xbvcDbG+El1XI2zUxACdpBsgxGA+dYcnq5+8o4vKyOM=", "reservation"=>{"size"=>"15", "time(1i)"=>"2013", "time(2i)"=>"7", "time(3i)"=>"16", "time(4i)"=>"17", "time(5i)"=>"59"}, "commit"=>"save", "restaurant_id"=>"6"}
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT 1  [["id", "6"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'D6MUQkHaGchEZ07W4dYuBA' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "reservations" ("created_at", "restaurant_id", "size", "time", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 16 Jul 2013 18:00:23 UTC +00:00], ["restaurant_id", 6], ["size", 15], ["time", nil], ["updated_at", Tue, 16 Jul 2013 18:00:23 UTC +00:00], ["user_id", 6]]
+  [1m[35m (1.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/6
+Completed 302 Found in 8ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/users/6" for 127.0.0.1 at 2013-07-16 14:00:23 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "6"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'D6MUQkHaGchEZ07W4dYuBA' LIMIT 1
+  [1m[36mReservation Load (0.2ms)[0m  [1mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = 6[0m
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 1 LIMIT 1[0m
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 5 LIMIT 1[0m
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 8 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 8 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 8 LIMIT 1
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  Rendered users/show.html.erb within layouts/application (38.2ms)
+Completed 200 OK in 87ms (Views: 85.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-16 14:00:23 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-07-16 14:00:23 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2013-07-16 14:00:23 -0400
+Served asset /restaurants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2013-07-16 14:00:23 -0400
+Served asset /reservations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-16 14:00:23 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-16 14:00:23 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-16 14:00:23 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-07-16 14:00:23 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2013-07-16 14:00:23 -0400
+Served asset /restaurants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2013-07-16 14:00:23 -0400
+Served asset /reservations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-16 14:00:23 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-16 14:00:23 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/restaurants/6/reservations/new" for 127.0.0.1 at 2013-07-16 14:00:26 -0400
+Processing by ReservationsController#new as HTML
+  Parameters: {"restaurant_id"=>"6"}
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT 1  [["id", "6"]]
+  Rendered reservations/new.html.erb within layouts/application (8.6ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (undefined method `datetime' for #<ActionView::Helpers::FormBuilder:0x007fddbec8edf0>):
+    15: 
+    16:     <p>
+    17:       <%= f.label "time" %><br>
+    18:       <%= f.datetime "time" %>
+    19:     </p>
+    20: 
+    21:     <p>
+  app/views/reservations/new.html.erb:18:in `block in _app_views_reservations_new_html_erb__316985036151647921_70295182706200'
+  app/views/reservations/new.html.erb:7:in `_app_views_reservations_new_html_erb__316985036151647921_70295182706200'
+
+
+  Rendered /Users/bitmaker/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /Users/bitmaker/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /Users/bitmaker/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.0ms)
+
+
+Started GET "/restaurants/6" for 127.0.0.1 at 2013-07-16 14:00:38 -0400
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT 1[0m  [["id", "6"]]
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 5 LIMIT 1
+  Rendered restaurants/show.html.erb within layouts/application (19.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'D6MUQkHaGchEZ07W4dYuBA' LIMIT 1[0m
+Completed 200 OK in 86ms (Views: 84.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-16 14:00:38 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-16 14:00:38 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2013-07-16 14:00:38 -0400
+Served asset /reservations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2013-07-16 14:00:38 -0400
+Served asset /restaurants.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-07-16 14:00:38 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-16 14:00:38 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-16 14:00:38 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2013-07-16 14:00:38 -0400
+Served asset /reservations.js - 304 Not Modified (23ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-07-16 14:00:38 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2013-07-16 14:00:38 -0400
+Served asset /restaurants.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-16 14:00:38 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-16 14:00:38 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/restaurants/6/reservations/new" for 127.0.0.1 at 2013-07-16 14:00:39 -0400
+Processing by ReservationsController#new as HTML
+  Parameters: {"restaurant_id"=>"6"}
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT 1  [["id", "6"]]
+  Rendered reservations/new.html.erb within layouts/application (7.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'D6MUQkHaGchEZ07W4dYuBA' LIMIT 1[0m
+Completed 200 OK in 71ms (Views: 69.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-16 14:00:39 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2013-07-16 14:00:39 -0400
+Served asset /restaurants.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-16 14:00:39 -0400
+Served asset /users.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2013-07-16 14:00:39 -0400
+Served asset /reservations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-07-16 14:00:39 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-16 14:00:39 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-16 14:00:39 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2013-07-16 14:00:39 -0400
+Served asset /reservations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2013-07-16 14:00:39 -0400
+Served asset /restaurants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-07-16 14:00:39 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-16 14:00:39 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-16 14:00:39 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/restaurants/6/reservations" for 127.0.0.1 at 2013-07-16 14:00:40 -0400
+Processing by ReservationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xbvcDbG+El1XI2zUxACdpBsgxGA+dYcnq5+8o4vKyOM=", "reservation"=>{"size"=>"2", "time(1i)"=>"2013", "time(2i)"=>"7", "time(3i)"=>"16", "time(4i)"=>"18", "time(5i)"=>"00"}, "commit"=>"save", "restaurant_id"=>"6"}
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT 1  [["id", "6"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'D6MUQkHaGchEZ07W4dYuBA' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "reservations" ("created_at", "restaurant_id", "size", "time", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 16 Jul 2013 18:00:40 UTC +00:00], ["restaurant_id", 6], ["size", 2], ["time", nil], ["updated_at", Tue, 16 Jul 2013 18:00:40 UTC +00:00], ["user_id", 6]]
+  [1m[35m (1.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/6
+Completed 302 Found in 7ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/users/6" for 127.0.0.1 at 2013-07-16 14:00:40 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "6"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'D6MUQkHaGchEZ07W4dYuBA' LIMIT 1
+  [1m[36mReservation Load (0.2ms)[0m  [1mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = 6[0m
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 1 LIMIT 1[0m
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 5 LIMIT 1[0m
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 8 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 8 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 8 LIMIT 1
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  Rendered users/show.html.erb within layouts/application (36.8ms)
+Completed 200 OK in 83ms (Views: 81.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-16 14:00:41 -0400
+Served asset /application.css - 304 Not Modified (24ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-07-16 14:00:41 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-16 14:00:41 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-16 14:00:41 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2013-07-16 14:00:41 -0400
+Served asset /reservations.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2013-07-16 14:00:41 -0400
+Served asset /restaurants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-16 14:00:41 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2013-07-16 14:00:41 -0400
+Served asset /reservations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2013-07-16 14:00:41 -0400
+Served asset /restaurants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-07-16 14:00:41 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-16 14:00:41 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-16 14:00:41 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/6" for 127.0.0.1 at 2013-07-16 14:01:01 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "6"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'D6MUQkHaGchEZ07W4dYuBA' LIMIT 1
+  [1m[36mReservation Load (0.3ms)[0m  [1mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = 6[0m
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 1 LIMIT 1[0m
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 5 LIMIT 1[0m
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 8 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 8 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 8 LIMIT 1
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  Rendered users/show.html.erb within layouts/application (62.3ms)
+Completed 200 OK in 153ms (Views: 122.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2013-07-16 14:01:01 -0400
+Served asset /reservations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-16 14:01:01 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-16 14:01:01 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-16 14:01:01 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2013-07-16 14:01:01 -0400
+Served asset /restaurants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-07-16 14:01:01 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-16 14:01:02 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2013-07-16 14:01:02 -0400
+Served asset /reservations.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2013-07-16 14:01:02 -0400
+Served asset /restaurants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-16 14:01:02 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-07-16 14:01:02 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-16 14:01:02 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/restaurants/6/reservations/new" for 127.0.0.1 at 2013-07-16 14:01:06 -0400
+Processing by ReservationsController#new as HTML
+  Parameters: {"restaurant_id"=>"6"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT 1[0m  [["id", "6"]]
+  Rendered reservations/new.html.erb within layouts/application (30.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'D6MUQkHaGchEZ07W4dYuBA' LIMIT 1
+Completed 200 OK in 73ms (Views: 70.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-16 14:01:06 -0400
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2013-07-16 14:01:06 -0400
+Served asset /reservations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-16 14:01:06 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2013-07-16 14:01:06 -0400
+Served asset /restaurants.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-16 14:01:06 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-07-16 14:01:06 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-16 14:01:06 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2013-07-16 14:01:06 -0400
+Served asset /reservations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2013-07-16 14:01:06 -0400
+Served asset /restaurants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-07-16 14:01:06 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-16 14:01:06 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-16 14:01:06 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/restaurants/6/reservations" for 127.0.0.1 at 2013-07-16 14:01:07 -0400
+Processing by ReservationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xbvcDbG+El1XI2zUxACdpBsgxGA+dYcnq5+8o4vKyOM=", "reservation"=>{"size"=>"2", "time(1i)"=>"2013", "time(2i)"=>"7", "time(3i)"=>"16", "time(4i)"=>"18", "time(5i)"=>"01"}, "commit"=>"save", "restaurant_id"=>"6"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT 1[0m  [["id", "6"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'D6MUQkHaGchEZ07W4dYuBA' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "reservations" ("created_at", "restaurant_id", "size", "time", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Tue, 16 Jul 2013 18:01:07 UTC +00:00], ["restaurant_id", 6], ["size", 2], ["time", nil], ["updated_at", Tue, 16 Jul 2013 18:01:07 UTC +00:00], ["user_id", 6]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/6
+Completed 302 Found in 9ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/users/6" for 127.0.0.1 at 2013-07-16 14:01:07 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "6"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'D6MUQkHaGchEZ07W4dYuBA' LIMIT 1[0m
+  [1m[35mReservation Load (0.2ms)[0m  SELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = 6
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 1 LIMIT 1
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 5 LIMIT 1
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 8 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 8 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 8 LIMIT 1[0m
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  Rendered users/show.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 82ms (Views: 80.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-16 14:01:07 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2013-07-16 14:01:07 -0400
+Served asset /restaurants.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-16 14:01:07 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2013-07-16 14:01:07 -0400
+Served asset /reservations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-16 14:01:07 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-07-16 14:01:07 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-16 14:01:07 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2013-07-16 14:01:07 -0400
+Served asset /reservations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2013-07-16 14:01:07 -0400
+Served asset /restaurants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-16 14:01:07 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-16 14:01:07 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-07-16 14:01:07 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-16 14:13:44 -0400
+Processing by RestaurantsController#index as HTML
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" [0m
+  Rendered restaurants/index.html.erb within layouts/application (1.4ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'D6MUQkHaGchEZ07W4dYuBA' LIMIT 1
+Completed 200 OK in 100ms (Views: 84.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-07-16 14:13:44 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2013-07-16 14:13:44 -0400
+Served asset /reservations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-16 14:13:44 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-16 14:13:44 -0400
+Served asset /users.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2013-07-16 14:13:44 -0400
+Served asset /restaurants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-16 14:13:44 -0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2013-07-16 14:13:44 -0400
+Served asset /restaurants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-07-16 14:13:44 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-16 14:13:44 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2013-07-16 14:13:44 -0400
+Served asset /reservations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-16 14:13:44 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/restaurants/7" for 127.0.0.1 at 2013-07-16 14:13:45 -0400
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT 1[0m  [["id", "7"]]
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 5 LIMIT 1
+  Rendered restaurants/show.html.erb within layouts/application (37.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'D6MUQkHaGchEZ07W4dYuBA' LIMIT 1[0m
+Completed 200 OK in 81ms (Views: 79.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-16 14:13:46 -0400
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2013-07-16 14:13:46 -0400
+Served asset /reservations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-07-16 14:13:46 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-16 14:13:46 -0400
+Served asset /users.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2013-07-16 14:13:46 -0400
+Served asset /restaurants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-16 14:13:46 -0400
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-16 14:13:46 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2013-07-16 14:13:46 -0400
+Served asset /reservations.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2013-07-16 14:13:46 -0400
+Served asset /restaurants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-07-16 14:13:46 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-16 14:13:46 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-16 14:13:46 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/restaurants/7/reservations/new" for 127.0.0.1 at 2013-07-16 14:13:47 -0400
+
+SyntaxError (/Users/bitmaker/Desktop/dtredger/whatsfordinner2/app/models/reservation.rb:9: syntax error, unexpected '(', expecting keyword_end
+...r_create :calc_seats_remaining(@restaurant.num_seats, @reser...
+...                               ^
+/Users/bitmaker/Desktop/dtredger/whatsfordinner2/app/models/reservation.rb:9: syntax error, unexpected ')', expecting '='):
+  app/controllers/reservations_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/bitmaker/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /Users/bitmaker/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /Users/bitmaker/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.4ms)
+
+
+Started GET "/restaurants/7/reservations/new" for 127.0.0.1 at 2013-07-16 14:14:07 -0400
+Processing by ReservationsController#new as HTML
+  Parameters: {"restaurant_id"=>"7"}
+  [1m[35mRestaurant Load (0.3ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT 1  [["id", "7"]]
+  Rendered reservations/new.html.erb within layouts/application (7.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'D6MUQkHaGchEZ07W4dYuBA' LIMIT 1[0m
+Completed 200 OK in 144ms (Views: 87.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-16 14:14:07 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2013-07-16 14:14:07 -0400
+Served asset /reservations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-16 14:14:07 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-16 14:14:07 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2013-07-16 14:14:07 -0400
+Served asset /restaurants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-07-16 14:14:07 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-16 14:14:07 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2013-07-16 14:14:07 -0400
+Served asset /reservations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2013-07-16 14:14:07 -0400
+Served asset /restaurants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-07-16 14:14:07 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-16 14:14:07 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-16 14:14:07 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started POST "/restaurants/7/reservations" for 127.0.0.1 at 2013-07-16 14:14:11 -0400
+Processing by ReservationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xbvcDbG+El1XI2zUxACdpBsgxGA+dYcnq5+8o4vKyOM=", "reservation"=>{"size"=>"2", "time(1i)"=>"2013", "time(2i)"=>"7", "time(3i)"=>"16", "time(4i)"=>"19", "time(5i)"=>"14"}, "commit"=>"save", "restaurant_id"=>"7"}
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT 1  [["id", "7"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'D6MUQkHaGchEZ07W4dYuBA' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "reservations" ("created_at", "restaurant_id", "size", "time", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 16 Jul 2013 18:14:11 UTC +00:00], ["restaurant_id", 7], ["size", 2], ["time", nil], ["updated_at", Tue, 16 Jul 2013 18:14:11 UTC +00:00], ["user_id", 6]]
+  [1m[35m (1.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/6
+Completed 302 Found in 26ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/users/6" for 127.0.0.1 at 2013-07-16 14:14:11 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "6"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'D6MUQkHaGchEZ07W4dYuBA' LIMIT 1
+  [1m[36mReservation Load (0.2ms)[0m  [1mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = 6[0m
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 1 LIMIT 1[0m
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 5 LIMIT 1[0m
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 8 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 8 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 8 LIMIT 1
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 7 LIMIT 1
+  Rendered users/show.html.erb within layouts/application (44.3ms)
+Completed 200 OK in 103ms (Views: 83.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-16 14:14:11 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2013-07-16 14:14:11 -0400
+Served asset /reservations.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2013-07-16 14:14:11 -0400
+Served asset /restaurants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-16 14:14:11 -0400
+Served asset /users.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-16 14:14:11 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-07-16 14:14:11 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-16 14:14:11 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2013-07-16 14:14:11 -0400
+Served asset /reservations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2013-07-16 14:14:11 -0400
+Served asset /restaurants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-07-16 14:14:11 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-16 14:14:11 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-16 14:14:11 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/restaurants/7/reservations" for 127.0.0.1 at 2013-07-16 14:15:14 -0400
+Processing by ReservationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xbvcDbG+El1XI2zUxACdpBsgxGA+dYcnq5+8o4vKyOM=", "reservation"=>{"size"=>"2", "time(1i)"=>"2013", "time(2i)"=>"7", "time(3i)"=>"16", "time(4i)"=>"19", "time(5i)"=>"14"}, "commit"=>"save", "restaurant_id"=>"7"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT 1[0m  [["id", "7"]]
+Completed 500 Internal Server Error in 43ms
+
+RuntimeError (nil):
+  app/controllers/reservations_controller.rb:8:in `create'
+
+
+  Rendered /Users/bitmaker/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /Users/bitmaker/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /Users/bitmaker/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.9ms)
+
+
+Started POST "/restaurants/7/reservations" for 127.0.0.1 at 2013-07-16 14:16:07 -0400
+Processing by ReservationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xbvcDbG+El1XI2zUxACdpBsgxGA+dYcnq5+8o4vKyOM=", "reservation"=>{"size"=>"2", "time(1i)"=>"2013", "time(2i)"=>"7", "time(3i)"=>"16", "time(4i)"=>"19", "time(5i)"=>"14"}, "commit"=>"save", "restaurant_id"=>"7"}
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT 1  [["id", "7"]]
+Completed 500 Internal Server Error in 24ms
+
+RuntimeError ({"size"=>"2", "time(1i)"=>"2013", "time(2i)"=>"7", "time(3i)"=>"16", "time(4i)"=>"19", "time(5i)"=>"14"}):
+  app/controllers/reservations_controller.rb:8:in `create'
+
+
+  Rendered /Users/bitmaker/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /Users/bitmaker/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /Users/bitmaker/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.6ms)
+
+
+Started POST "/restaurants/7/reservations" for 127.0.0.1 at 2013-07-16 14:19:02 -0400
+Processing by ReservationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xbvcDbG+El1XI2zUxACdpBsgxGA+dYcnq5+8o4vKyOM=", "reservation"=>{"size"=>"2", "time(1i)"=>"2013", "time(2i)"=>"7", "time(3i)"=>"16", "time(4i)"=>"19", "time(5i)"=>"14"}, "commit"=>"save", "restaurant_id"=>"7"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT 1[0m  [["id", "7"]]
+Completed 500 Internal Server Error in 48ms
+
+NoMethodError (undefined method `build' for #<Restaurant:0x007fddbed99470>):
+  app/controllers/reservations_controller.rb:14:in `create'
+
+
+  Rendered /Users/bitmaker/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /Users/bitmaker/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /Users/bitmaker/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.0ms)
+
+
+Started POST "/restaurants/7/reservations" for 127.0.0.1 at 2013-07-16 14:19:14 -0400
+Processing by ReservationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xbvcDbG+El1XI2zUxACdpBsgxGA+dYcnq5+8o4vKyOM=", "reservation"=>{"size"=>"2", "time(1i)"=>"2013", "time(2i)"=>"7", "time(3i)"=>"16", "time(4i)"=>"19", "time(5i)"=>"14"}, "commit"=>"save", "restaurant_id"=>"7"}
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT 1  [["id", "7"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'D6MUQkHaGchEZ07W4dYuBA' LIMIT 1[0m
+Completed 500 Internal Server Error in 77ms
+
+RuntimeError (#<Reservation id: nil, time: "2013-07-16 19:14:00", size: 2, created_at: nil, updated_at: nil, user_id: 6, restaurant_id: 7>):
+  app/controllers/reservations_controller.rb:16:in `create'
+
+
+  Rendered /Users/bitmaker/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /Users/bitmaker/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /Users/bitmaker/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.8ms)
+
+
+Started POST "/restaurants/7/reservations" for 127.0.0.1 at 2013-07-16 14:19:45 -0400
+Processing by ReservationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xbvcDbG+El1XI2zUxACdpBsgxGA+dYcnq5+8o4vKyOM=", "reservation"=>{"size"=>"2", "time(1i)"=>"2013", "time(2i)"=>"7", "time(3i)"=>"16", "time(4i)"=>"19", "time(5i)"=>"14"}, "commit"=>"save", "restaurant_id"=>"7"}
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT 1  [["id", "7"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'D6MUQkHaGchEZ07W4dYuBA' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "reservations" ("created_at", "restaurant_id", "size", "time", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 16 Jul 2013 18:19:45 UTC +00:00], ["restaurant_id", 7], ["size", 2], ["time", Tue, 16 Jul 2013 19:14:00 UTC +00:00], ["updated_at", Tue, 16 Jul 2013 18:19:45 UTC +00:00], ["user_id", 6]]
+  [1m[35m (1.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/6
+Completed 302 Found in 82ms (ActiveRecord: 20.4ms)
+
+
+Started GET "/users/6" for 127.0.0.1 at 2013-07-16 14:19:45 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "6"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'D6MUQkHaGchEZ07W4dYuBA' LIMIT 1
+  [1m[36mReservation Load (0.2ms)[0m  [1mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = 6[0m
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 1 LIMIT 1[0m
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 5 LIMIT 1[0m
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 8 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 8 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 8 LIMIT 1
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = 7 LIMIT 1[0m
+  Rendered users/show.html.erb within layouts/application (27.2ms)
+Completed 200 OK in 93ms (Views: 90.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2013-07-16 14:19:45 -0400
+Served asset /restaurants.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-16 14:19:45 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-07-16 14:19:45 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-16 14:19:45 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2013-07-16 14:19:45 -0400
+Served asset /reservations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-16 14:19:45 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-16 14:19:45 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2013-07-16 14:19:45 -0400
+Served asset /reservations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-07-16 14:19:45 -0400
+Served asset /sessions.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2013-07-16 14:19:45 -0400
+Served asset /restaurants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-16 14:19:45 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-16 14:19:45 -0400
+Served asset /application.js - 304 Not Modified (0ms)
